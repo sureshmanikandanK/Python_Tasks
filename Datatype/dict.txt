@@ -1,0 +1,12 @@
+Dictionary 
+-> A dictionary is a collection of key and value pair
+-> Here ,each key is connected to a value
+
+-> use a key to access the value
+-> key should be unique
+
+
+bzdfifaehfhadifbbfbdaifkbbzdkfnjbzdbfkjdbf
+
+
+

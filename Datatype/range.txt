@@ -1,0 +1,13 @@
+while 
+->while lopp is used to execute a block of statements repeatedly until a given condition is satisfied
+-> whent he condition becomes false, the line immediately after the loopin inthe given program is executed
+#Syntax:
+while(expression):
+      loop body
+
+
+
+range() -> number of sequence
+start -> default0
+stop -> excluded 
+chaeck ->defalut1
