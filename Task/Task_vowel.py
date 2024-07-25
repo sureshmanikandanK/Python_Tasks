@@ -2,6 +2,6 @@
 
 # vowels = ['a','e','i','o','u']
 vowels = 'aeiou'
-name="ravindiran"
+name="suresh"
 consonants = [i for i in name if i not in vowels]
 print(consonants)
