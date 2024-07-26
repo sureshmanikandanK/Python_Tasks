@@ -7,11 +7,11 @@ def copy_file(file1, file2):
     else:
         file_1 = open(file1, 'r')
         Friends = file_1.read()
-        file_1.close()
+       
         
         file_2 = open(file2, 'w')
         file_2.write(Friends)
-        file_2.close()
+        
         
         print(f'Success -> Content copied from {file1} to {file2}')
 
