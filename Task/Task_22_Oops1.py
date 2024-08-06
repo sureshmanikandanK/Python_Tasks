@@ -1,4 +1,3 @@
-
 class Demo:
     def __init__(self,first,last):
         self.first = first 

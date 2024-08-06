@@ -1,29 +1,33 @@
 class BankAccount:
     ROI = 10.5
+
     def __init__(self):
-        self.Name=""
-        self.Amount=0
+        self.Name = ""
+        self.Amount = 0
 
     def create(self):
-        self.Name=input('Enter your Name ')
+        self.Name = input('Enter your Name: ')
     
-    def Deposit (self):
-       self.Amount=int(input('Enter Amount '))
+    def Deposit(self):
+        deposit_amount = int(input('Enter Amount to Deposit: '))
+        self.Amount += deposit_amount
 
-    def Withdraw(self,afterWidthdraw):
-        self.Amount1=int(input('Enter the amount to widthdraw '))
-        afterWidthdraw=self.Amount-self.Amount1
-        print(f'{afterWidthdraw}')
+    def Withdraw(self):
+        withdraw_amount = int(input('Enter the amount to Withdraw: '))
+        self.Amount -= withdraw_amount
+        self.Amount = max(self.Amount, 0)
+        print(f'Remaining balance: {self.Amount}')
 
     def CalculateInterest(self):
-        print(self.Amount*BankAccount.ROI/100)
+        interest = self.Amount * BankAccount.ROI / 100
+        print(f'Interest amount: {interest}')
 
     def Display(self):
-        print(f'{self.Name} {self.Amount}')
+        print(f'Account Holder: {self.Name}, Balance: {self.Amount}')
 
-user=BankAccount()
+user = BankAccount()
 user.create()
 user.Deposit()
 user.Withdraw()
 user.CalculateInterest()
-user.Display()
+user.Display() 
