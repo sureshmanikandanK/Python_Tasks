@@ -19,7 +19,14 @@ class Bank_Account:
     @classmethod
     def DisplayBankInfo(cls):
         print(f'Bank Name : {cls.Bank_name} and you have ROI of :{cls.ROI_On_FD}')
-
+    @staticmethod
+    def DisplayKYCInfo(customer_name, customer_photo, address):
+        print(f"Customer AAdhar: {customer_name}")
+        print(f"Customer Photo: {customer_photo}")
+        print(f"Address: {address}")
+    
+        
+Bank_Account.DisplayKYCInfo('102211202121', 'Photo', 'Chennai')
 def main():
     Account=Bank_Account()
     Account.CreateAccount()

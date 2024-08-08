@@ -3,7 +3,7 @@ class BankAccount:
 
     def __init__(self):
         self.Name = ""
-        self.Amount = 0
+        self.Amount = 1000
 
     def create(self):
         self.Name = input('Enter your Name: ')
@@ -31,3 +31,4 @@ user.Deposit()
 user.Withdraw()
 user.CalculateInterest()
 user.Display() 
+
