@@ -17,31 +17,20 @@ class Number:
         self.value = float(input("Enter Number : "))
 
     def ChkPrime(self):
-        count = 0
-        if self.value == 1:
+        if self.value <= 1:
             return False
-        
-        num = self.value
-        for i in range(2,int(self.value+1)):
-            if i == 0 or i == 1:
-                continue
-            
-            if num % i == 0:
-                count += 1
-            
-        if count == 1:
-            return True
-        
-        return False
+        for i in range(2, int(self.value /2) + 1):
+            if self.value % i == 0:
+                return False
+        return True
 
     def ChkPerfect(self):
        
         return self.SumFactors() == int(self.value)
     
     def SumFactors(self):
-       factorList =  self.Factors()
-       sum =  reduce((lambda num1,num2 : num1+num2),factorList)
-       return sum
+        sumfactor = self.Factors()
+        return sum(sumfactor)
 
     def Factors(self):
         factors=[]
