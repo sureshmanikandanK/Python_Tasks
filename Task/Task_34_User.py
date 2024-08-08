@@ -8,24 +8,35 @@ class User:
     def __init__(self):
         self.first_name=input('Enter your firstname : ')
         self.last_name=input('Enter your lastname : ')
-        self.email=input('Enter your email : ')
-        self.empid=int(input('Enter your empid : '))
+        self.__email=''
+        self.__empid=''
         self.phonenum=int(input('Enter your phonenumber : '))
         self.address=input('Enter your address : ')
+
+    def setdetails(self,email,empid):
+        self.__email=email
+        self.__empid=empid
+
     def describe_user(self):
-        print(f'User detail : \nFirst_name: {self.first_name} \nLast_Name: {self.last_name} \nEmail: {self.email} \nEmpid: {self.empid} \nPhone: {self.phonenum} \nAddress: {self.address}')
+        print(f'User detail : \nFirst_name: {self.first_name} \nLast_Name: {self.last_name} \nEmail: {self.__email} \nEmpid: {self.__empid} \nPhone: {self.phonenum} \nAddress: {self.address}')
     def greet_user(self):
         print(f'Hi {self.first_name}{self.last_name} We Welcome U To Our Organization')
 
 User1=User()
+User1.setdetails('sdhus','56546')
 User1.describe_user()
 User1.greet_user()
 User2=User()
+User2.setdetails('dzfsdf','765866')
 User2.describe_user()
 User2.greet_user()
 User3=User()
+User3.setdetails('sdhhjytus','47857')
 User3.describe_user()
 User3.greet_user()
 User4=User()
+User4.setdetails('sdhweewus','567686546')
 User4.describe_user()
 User4.greet_user()
+
+
