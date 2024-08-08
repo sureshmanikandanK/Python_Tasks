@@ -33,12 +33,3 @@ restaurant3.describe_restaurant()
 restaurant4 = Restaurant()
 restaurant4.describe_restaurant() 
 
-
-def prime():
-    num = int(input())
-
-    for i in range(2,num/2):
-        if num %i == 0: 
-            return False
-        
-        return True
