@@ -1,7 +1,7 @@
 import os
 
 def File_handling_task():
-    file_path = r"c:\Python\Tasks\Task\Demo.txt"
+    file_path = input('Enter the Path : ')
 
     if os.path.exists(file_path):
         with open(file_path, "r") as file:
@@ -16,5 +16,9 @@ def File_handling_task():
             return f"The word '{search_word}' is not present in the file."
     else:
         return "The file does not exist."
+def main():
 
-print(File_handling_task())
+    print(File_handling_task())
+
+if __name__ == '__main__':
+    main()
