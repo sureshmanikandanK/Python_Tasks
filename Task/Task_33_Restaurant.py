@@ -14,12 +14,12 @@
 # Create several instances representing different users, and call both methods for each user.
 
 class Restaurant:
-    def __init__(self):
-        self.restaurant_name = input('Enter the restaruant name : ')
-        self.cuisine_type = input('Enter the restaruant cuisine type : ')
-        self.isopen= input('Enter the restaruant is open or close : ')
+    def __init__(self,restaurant_name,cusine_type,):
+        self.restaurant_name=restaurant_name
+        self.cusine_type=cusine_type
+        self.isopen=True
     def describe_restaurant(self):
-        print(f' The restaurant name is {self.restaurant_name} and the cuisine type is {self.cuisine_type} ')
+        print(f' The restaurant name is {self.restaurant_name} and the cuisine type is {self.cusine_type} ')
     def open_restaurant(self):
         if self.isopen == 'open':
             print(f'The restaurant {self.restaurant_name} is open now')
@@ -37,14 +37,19 @@ class KFC(Restaurant):
     def __init__(self, restaurant_name, cusine_type,isopen):
         super().__init__(restaurant_name, cusine_type)
         self.isopen=isopen
-    
-restaurant1 = Restaurant()
+
+restaurant1 = Restaurant('fgdf','fdfudf')
+rrr=SalemRRR("salem RRR hotel","south indian",False)
+punjabi=Dhabha("Dhanbha","punjabi indian food",False)
+kfc=KFC("KFC Chicken","Indian food",True)
+
+
 restaurant1.describe_restaurant()
 restaurant1.open_restaurant()
-restaurant2 = Restaurant()
-restaurant2.describe_restaurant()
-restaurant3 = Restaurant()
-restaurant3.describe_restaurant()
-restaurant4 = Restaurant()
-restaurant4.describe_restaurant() 
+
+punjabi.describe_restaurant()
+punjabi.open_restaurant()
+
+kfc.describe_restaurant()
+kfc.open_restaurant()
 

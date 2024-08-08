@@ -1,5 +1,5 @@
 class Arithmetic:
-    def __init__(self) -> None:
+    def __init__(self):
         value1=0
         value2=0
     def Accept(self):
