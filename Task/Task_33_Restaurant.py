@@ -17,11 +17,26 @@ class Restaurant:
     def __init__(self):
         self.restaurant_name = input('Enter the restaruant name : ')
         self.cuisine_type = input('Enter the restaruant cuisine type : ')
-
+        self.isopen= input('Enter the restaruant is open or close : ')
     def describe_restaurant(self):
         print(f' The restaurant name is {self.restaurant_name} and the cuisine type is {self.cuisine_type} ')
     def open_restaurant(self):
-        print(f'The restaurant {self.restaurant_name} is open now')
+        if self.isopen == 'open':
+            print(f'The restaurant {self.restaurant_name} is open now')
+        else:
+            print(f'The restaurant {self.restaurant_name} is Close now')
+class SalemRRR(Restaurant):
+    def __init__(self, restaurant_name, cusine_type,isopen):
+        super().__init__(restaurant_name, cusine_type)
+        self.isopen=isopen
+class Dhabha(Restaurant):
+    def __init__(self, restaurant_name, cusine_type,isopen):
+        super().__init__(restaurant_name, cusine_type)
+        self.isopen=isopen
+class KFC(Restaurant):
+    def __init__(self, restaurant_name, cusine_type,isopen):
+        super().__init__(restaurant_name, cusine_type)
+        self.isopen=isopen
     
 restaurant1 = Restaurant()
 restaurant1.describe_restaurant()
